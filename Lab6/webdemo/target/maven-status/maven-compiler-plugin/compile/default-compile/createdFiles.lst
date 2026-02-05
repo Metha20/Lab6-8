@@ -1,0 +1,3 @@
+com\app\webdemo\model\RegistrationForm.class
+com\app\webdemo\controller\WebdemoController.class
+com\app\webdemo\WebdemoApplication.class
