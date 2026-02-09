@@ -1,0 +1,146 @@
+/* --- 1. Basic Reset & Base Styles --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column; /* จัดให้เนื้อหาเรียงต่อกันเป็นแนวตั้ง (Header/Main/Footer) */
+    min-height: 100vh; /* ให้ความสูงอย่างน้อยเท่ากับหน้าจอ */
+}
+
+/* --- 2. Layout Structure --- */
+.container {
+    display: flex;
+    flex: 1; /* ยืดเพื่อกินพื้นที่ว่างที่เหลือระหว่าง Header/Footer */
+}
+
+/* --- 3. Sidebar Navigation (Aside) --- */
+aside {
+    width: 200px;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+aside nav ul {
+    list-style-type: none;
+}
+
+aside nav ul li {
+    margin-bottom: 15px;
+}
+
+aside a {
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+    margin: 5px;
+}
+
+aside a:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/* --- 4. Main Content Area --- */
+main {
+    flex: 1;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+main h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+/* ปุ่มทั่วไปในส่วน Main */
+main a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+main a:hover {
+    background-color: #218838;
+}
+
+/* --- 5. Form Styles --- */
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto; /* จัดกึ่งกลางคอนเทนเนอร์ */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20%; /* ขยับขอบซ้ายขวา */
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button[type="submit"] {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* ลิงก์ภายในฟอร์ม */
+form a {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+form a:hover {
+    text-decoration: underline;
+}
+
+/* --- 6. Footer --- */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
