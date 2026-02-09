@@ -3,76 +3,92 @@ package com.app.webdemo.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 import com.app.webdemo.model.RegistrationForm;
+import com.app.webdemo.model.User;
+import com.app.webdemo.repository.UserRepository;
 
 import jakarta.validation.Valid;
+
+
+
 
 @Controller
 public class WebdemoController {
 
-    // =========================
+    private final UserRepository userRepository;
+
+    public WebdemoController(UserRepository userRepository) {
+        this.userRepository = userRepository;
+    }
+
     // หน้า Home
-    // =========================
     @GetMapping("/")
     public String home() {
         return "index";
     }
 
-    // =========================
     // หน้า Registration
-    // =========================
     @GetMapping("/registration")
     public String showRegistrationForm(Model model) {
         model.addAttribute("registrationForm", new RegistrationForm());
         return "registration";
     }
 
-    // =========================
-    // POST : Register
-    // =========================
+    // POST : Register + บันทึก DB
     @PostMapping("/register")
     public String handleRegistration(
             @Valid RegistrationForm registrationForm,
             BindingResult bindingResult,
             Model model) {
 
-        // มี error → กลับหน้า registration
         if (bindingResult.hasErrors()) {
             return "registration";
         }
 
-        // ไม่มี error → ส่งข้อมูลไป success.html
-        model.addAttribute("firstName", registrationForm.getFirstName());
-        model.addAttribute("lastName", registrationForm.getLastName());
-        model.addAttribute("country", registrationForm.getCountry());
-        model.addAttribute("dob", registrationForm.getDob());
-        model.addAttribute("email", registrationForm.getEmail());
+        // 👉 Form → Entity
+        User user = new User();
+        user.setFirstName(registrationForm.getFirstName());
+        user.setLastName(registrationForm.getLastName());
+        user.setCountry(registrationForm.getCountry());
+        user.setDob(registrationForm.getDob());
+        user.setEmail(registrationForm.getEmail());
+
+        // 👉 บันทึก DB
+        userRepository.save(user);
+
+        // ส่งข้อมูลไปหน้า success
+        model.addAttribute("firstName", user.getFirstName());
+        model.addAttribute("lastName", user.getLastName());
+        model.addAttribute("country", user.getCountry());
+        model.addAttribute("dob", user.getDob());
+        model.addAttribute("email", user.getEmail());
 
         return "success";
     }
 
-    // =========================
-    // REST API (Module 3)
-    // =========================
-
-    // PUT : แก้ไขข้อมูล (ตัวอย่าง)
+    // PUT
     @PutMapping("/users/{id}")
     @ResponseBody
-    public String updateUser(@PathVariable int id) {
-        return "PUT success: update user id = " + id;
+    public String updateUser(@PathVariable Long id) {
+        return userRepository.findById(id)
+                .map(user -> {
+                    user.setCountry("Updated");
+                    userRepository.save(user);
+                    return "PUT success: update user id = " + id;
+                })
+                .orElse("User not found id = " + id);
     }
 
-    // DELETE : ลบข้อมูล (ตัวอย่าง)
+    // DELETE
     @DeleteMapping("/users/{id}")
     @ResponseBody
-    public String deleteUser(@PathVariable int id) {
-        return "DELETE success: delete user id = " + id;
+    public String deleteUser(@PathVariable Long id) {
+        if (userRepository.existsById(id)) {
+            userRepository.deleteById(id);
+            return "DELETE success: delete user id = " + id;
+        }
+        return "User not found id = " + id;
     }
 }
