@@ -1,0 +1,5 @@
+com\example\secureauthapp\config\WebSecurityConfig.class
+com\example\secureauthapp\model\User.class
+com\example\secureauthapp\SecureappApplication.class
+com\example\secureauthapp\controller\WebsiteController.class
+com\example\secureauthapp\service\CustomUserDetailsService.class
