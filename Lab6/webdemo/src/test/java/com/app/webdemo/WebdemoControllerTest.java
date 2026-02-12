@@ -18,7 +18,7 @@ public class WebdemoControllerTest {
     private MockMvc mvc;
 
     // ===============================
-    // 1️⃣ Test Home Page
+    // 1️ Test Home Page
     // ===============================
     @Test
     public void testHomePage() throws Exception {
@@ -30,7 +30,7 @@ public class WebdemoControllerTest {
     }
 
     // ===============================
-    // 2️⃣ Test Registration Page
+    // 2️ Test Registration Page
     // ===============================
     @Test
     public void testShowRegistrationForm() throws Exception {
@@ -43,7 +43,7 @@ public class WebdemoControllerTest {
     }
 
     // ===============================
-    // 3️⃣ Register Success
+    // 3️ Register Success
     // ===============================
     @Test
     public void testRegisterSuccess() throws Exception {
@@ -63,7 +63,7 @@ public class WebdemoControllerTest {
     }
 
     // ===============================
-    // 4️⃣ All Fields Empty
+    // 4️ All Fields Empty
     // ===============================
     @Test
     public void testAllFieldsEmpty() throws Exception {
@@ -82,7 +82,7 @@ public class WebdemoControllerTest {
     }
 
     // ===============================
-    // 5️⃣ Email Empty
+    // 5️ Email Empty
     // ===============================
     @Test
     public void testEmailEmpty() throws Exception {
@@ -99,7 +99,7 @@ public class WebdemoControllerTest {
     }
 
     // ===============================
-    // 6️⃣ Invalid Email Format
+    // 6️ Invalid Email Format
     // ===============================
     @Test
     public void testInvalidEmailFormat() throws Exception {
@@ -116,7 +116,7 @@ public class WebdemoControllerTest {
     }
 
     // ===============================
-    // 7️⃣ FirstName Too Long (Boundary)
+    // 7️ FirstName Too Long (Boundary)
     // ===============================
     @Test
     public void testFirstNameTooLong() throws Exception {
@@ -133,7 +133,7 @@ public class WebdemoControllerTest {
     }
 
     // ===============================
-    // 8️⃣ Invalid DOB Format
+    // 8️ Invalid DOB Format
     // ===============================
     @Test
     public void testInvalidDobFormat() throws Exception {
@@ -150,7 +150,7 @@ public class WebdemoControllerTest {
     }
 
     // ===============================
-    // 9️⃣ PUT API
+    // 9️ PUT API
     // ===============================
     @Test
     public void testPutUser() throws Exception {
@@ -162,7 +162,7 @@ public class WebdemoControllerTest {
     }
 
     // ===============================
-    // 🔟 DELETE API
+    // 10 DELETE API
     // ===============================
     @Test
     public void testDeleteUser() throws Exception {
@@ -174,7 +174,7 @@ public class WebdemoControllerTest {
     }
 
     // ===============================
-    // 1️⃣1️⃣ 404 Test
+    // 1️1 404 Test
     // ===============================
     @Test
     public void testPageNotFound() throws Exception {
@@ -185,7 +185,7 @@ public class WebdemoControllerTest {
     }
 
     // ===============================
-    // 1️⃣2️⃣ Method Not Allowed
+    // 1️2️ Method Not Allowed
     // ===============================
     @Test
     public void testMethodNotAllowed() throws Exception {
@@ -196,7 +196,7 @@ public class WebdemoControllerTest {
     }
 
     // ===============================
-    // 1️⃣3️⃣ Response Content Check
+    // 1️3️ Response Content Check
     // ===============================
     @Test
     public void testResponseContent() throws Exception {
