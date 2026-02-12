@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.app.webdemo.WebdemoControllerTest" time="2.802" tests="6" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.app.webdemo.WebdemoControllerTest" time="2.589" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -18,7 +18,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="D:\Java\jdk-21\bin"/>
-    <property name="sun.java.command" value="C:\Users\ASUS\AppData\Local\Temp\surefire6368908256844551433\surefirebooter-20260212001546989_3.jar C:\Users\ASUS\AppData\Local\Temp\surefire6368908256844551433 2569-02-12T00-15-46_861-jvmRun1 surefire-20260212001546989_1tmp surefire_0-20260212001546989_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\ASUS\AppData\Local\Temp\surefire14892936288872061236\surefirebooter-20260212093532255_3.jar C:\Users\ASUS\AppData\Local\Temp\surefire14892936288872061236 2569-02-12T09-35-32_152-jvmRun1 surefire-20260212093532255_1tmp surefire_0-20260212093532255_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="D:\2.CPE\2-2\2.SoftWare\After\Lab66666\Lab6-8\Lab6\webdemo\target\test-classes;D:\2.CPE\2-2\2.SoftWare\After\Lab66666\Lab6-8\Lab6\webdemo\target\classes;C:\Users\ASUS\.m2\repository\org\springframework\boot\spring-boot-starter-thymeleaf\3.4.3\spring-boot-starter-thymeleaf-3.4.3.jar;C:\Users\ASUS\.m2\repository\org\springframework\boot\spring-boot-starter\3.4.3\spring-boot-starter-3.4.3.jar;C:\Users\ASUS\.m2\repository\org\springframework\boot\spring-boot\3.4.3\spring-boot-3.4.3.jar;C:\Users\ASUS\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.4.3\spring-boot-autoconfigure-3.4.3.jar;C:\Users\ASUS\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.4.3\spring-boot-starter-logging-3.4.3.jar;C:\Users\ASUS\.m2\repository\ch\qos\logback\logback-classic\1.5.16\logback-classic-1.5.16.jar;C:\Users\ASUS\.m2\repository\ch\qos\logback\logback-core\1.5.16\logback-core-1.5.16.jar;C:\Users\ASUS\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.24.3\log4j-to-slf4j-2.24.3.jar;C:\Users\ASUS\.m2\repository\org\apache\logging\log4j\log4j-api\2.24.3\log4j-api-2.24.3.jar;C:\Users\ASUS\.m2\repository\org\slf4j\jul-to-slf4j\2.0.16\jul-to-slf4j-2.0.16.jar;C:\Users\ASUS\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\ASUS\.m2\repository\org\yaml\snakeyaml\2.3\snakeyaml-2.3.jar;C:\Users\ASUS\.m2\repository\org\thymeleaf\thymeleaf-spring6\3.1.3.RELEASE\thymeleaf-spring6-3.1.3.RELEASE.jar;C:\Users\ASUS\.m2\repository\org\thymeleaf\thymeleaf\3.1.3.RELEASE\thymeleaf-3.1.3.RELEASE.jar;C:\Users\ASUS\.m2\repository\org\attoparser\attoparser\2.0.7.RELEASE\attoparser-2.0.7.RELEASE.jar;C:\Users\ASUS\.m2\repository\org\unbescape\unbescape\1.1.6.RELEASE\unbescape-1.1.6.RELEASE.jar;C:\Users\ASUS\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\ASUS\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.4.3\spring-boot-starter-web-3.4.3.jar;C:\Users\ASUS\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.4.3\spring-boot-starter-json-3.4.3.jar;C:\Users\ASUS\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.18.2\jackson-databind-2.18.2.jar;C:\Users\ASUS\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.18.2\jackson-annotations-2.18.2.jar;C:\Users\ASUS\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.18.2\jackson-core-2.18.2.jar;C:\Users\ASUS\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.18.2\jackson-datatype-jdk8-2.18.2.jar;C:\Users\ASUS\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.18.2\jackson-datatype-jsr310-2.18.2.jar;C:\Users\ASUS\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.18.2\jackson-module-parameter-names-2.18.2.jar;C:\Users\ASUS\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.4.3\spring-boot-starter-tomcat-3.4.3.jar;C:\Users\ASUS\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.36\tomcat-embed-core-10.1.36.jar;C:\Users\ASUS\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.36\tomcat-embed-websocket-10.1.36.jar;C:\Users\ASUS\.m2\repository\org\springframework\spring-web\6.2.3\spring-web-6.2.3.jar;C:\Users\ASUS\.m2\repository\org\springframework\spring-beans\6.2.3\spring-beans-6.2.3.jar;C:\Users\ASUS\.m2\repository\io\micrometer\micrometer-observation\1.14.4\micrometer-observation-1.14.4.jar;C:\Users\ASUS\.m2\repository\io\micrometer\micrometer-commons\1.14.4\micrometer-commons-1.14.4.jar;C:\Users\ASUS\.m2\repository\org\springframework\spring-webmvc\6.2.3\spring-webmvc-6.2.3.jar;C:\Users\ASUS\.m2\repository\org\springframework\spring-aop\6.2.3\spring-aop-6.2.3.jar;C:\Users\ASUS\.m2\repository\org\springframework\spring-context\6.2.3\spring-context-6.2.3.jar;C:\Users\ASUS\.m2\repository\org\springframework\spring-expression\6.2.3\spring-expression-6.2.3.jar;C:\Users\ASUS\.m2\repository\org\springframework\boot\spring-boot-starter-validation\3.4.3\spring-boot-starter-validation-3.4.3.jar;C:\Users\ASUS\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.36\tomcat-embed-el-10.1.36.jar;C:\Users\ASUS\.m2\repository\org\hibernate\validator\hibernate-validator\8.0.2.Final\hibernate-validator-8.0.2.Final.jar;C:\Users\ASUS\.m2\repository\jakarta\validation\jakarta.validation-api\3.0.2\jakarta.validation-api-3.0.2.jar;C:\Users\ASUS\.m2\repository\org\jboss\logging\jboss-logging\3.6.1.Final\jboss-logging-3.6.1.Final.jar;C:\Users\ASUS\.m2\repository\com\fasterxml\classmate\1.7.0\classmate-1.7.0.jar;C:\Users\ASUS\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.4.3\spring-boot-starter-test-3.4.3.jar;C:\Users\ASUS\.m2\repository\org\springframework\boot\spring-boot-test\3.4.3\spring-boot-test-3.4.3.jar;C:\Users\ASUS\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.4.3\spring-boot-test-autoconfigure-3.4.3.jar;C:\Users\ASUS\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\ASUS\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.2\jakarta.xml.bind-api-4.0.2.jar;C:\Users\ASUS\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.3\jakarta.activation-api-2.1.3.jar;C:\Users\ASUS\.m2\repository\net\minidev\json-smart\2.5.2\json-smart-2.5.2.jar;C:\Users\ASUS\.m2\repository\net\minidev\accessors-smart\2.5.2\accessors-smart-2.5.2.jar;C:\Users\ASUS\.m2\repository\org\ow2\asm\asm\9.7.1\asm-9.7.1.jar;C:\Users\ASUS\.m2\repository\org\assertj\assertj-core\3.26.3\assertj-core-3.26.3.jar;C:\Users\ASUS\.m2\repository\net\bytebuddy\byte-buddy\1.15.11\byte-buddy-1.15.11.jar;C:\Users\ASUS\.m2\repository\org\awaitility\awaitility\4.2.2\awaitility-4.2.2.jar;C:\Users\ASUS\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\ASUS\.m2\repository\org\junit\jupiter\junit-jupiter\5.11.4\junit-jupiter-5.11.4.jar;C:\Users\ASUS\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.11.4\junit-jupiter-api-5.11.4.jar;C:\Users\ASUS\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\ASUS\.m2\repository\org\junit\platform\junit-platform-commons\1.11.4\junit-platform-commons-1.11.4.jar;C:\Users\ASUS\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\ASUS\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.11.4\junit-jupiter-params-5.11.4.jar;C:\Users\ASUS\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.11.4\junit-jupiter-engine-5.11.4.jar;C:\Users\ASUS\.m2\repository\org\junit\platform\junit-platform-engine\1.11.4\junit-platform-engine-1.11.4.jar;C:\Users\ASUS\.m2\repository\org\mockito\mockito-core\5.14.2\mockito-core-5.14.2.jar;C:\Users\ASUS\.m2\repository\net\bytebuddy\byte-buddy-agent\1.15.11\byte-buddy-agent-1.15.11.jar;C:\Users\ASUS\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\ASUS\.m2\repository\org\mockito\mockito-junit-jupiter\5.14.2\mockito-junit-jupiter-5.14.2.jar;C:\Users\ASUS\.m2\repository\org\skyscreamer\jsonassert\1.5.3\jsonassert-1.5.3.jar;C:\Users\ASUS\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\ASUS\.m2\repository\org\springframework\spring-core\6.2.3\spring-core-6.2.3.jar;C:\Users\ASUS\.m2\repository\org\springframework\spring-jcl\6.2.3\spring-jcl-6.2.3.jar;C:\Users\ASUS\.m2\repository\org\springframework\spring-test\6.2.3\spring-test-6.2.3.jar;C:\Users\ASUS\.m2\repository\org\xmlunit\xmlunit-core\2.10.0\xmlunit-core-2.10.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -35,7 +35,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="FILE_LOG_CHARSET" value="UTF-8"/>
     <property name="java.awt.headless" value="true"/>
-    <property name="surefire.real.class.path" value="C:\Users\ASUS\AppData\Local\Temp\surefire6368908256844551433\surefirebooter-20260212001546989_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\ASUS\AppData\Local\Temp\surefire14892936288872061236\surefirebooter-20260212093532255_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.9+10-LTS"/>
@@ -54,7 +54,7 @@
     <property name="user.dir" value="D:\2.CPE\2-2\2.SoftWare\After\Lab66666\Lab6-8\Lab6\webdemo"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="PID" value="30204"/>
+    <property name="PID" value="3860"/>
     <property name="user.language.format" value="th"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
@@ -68,9 +68,9 @@
     <property name="java.class.version" value="65.0"/>
     <property name="LOGGED_APPLICATION_NAME" value="[webdemo] "/>
   </properties>
-  <testcase name="testUpdateUser" classname="com.app.webdemo.WebdemoControllerTest" time="0.674">
-    <system-out><![CDATA[00:15:47.765 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.app.webdemo.WebdemoControllerTest]: WebdemoControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-00:15:47.877 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.app.webdemo.WebdemoApplication for test class com.app.webdemo.WebdemoControllerTest
+  <testcase name="testUpdateUser" classname="com.app.webdemo.WebdemoControllerTest" time="0.688">
+    <system-out><![CDATA[09:35:32.912 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.app.webdemo.WebdemoControllerTest]: WebdemoControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+09:35:33.023 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.app.webdemo.WebdemoApplication for test class com.app.webdemo.WebdemoControllerTest
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -81,13 +81,13 @@
 
  :: Spring Boot ::                (v3.4.3)
 
-2026-02-12T00:15:48.339+07:00  INFO 30204 --- [webdemo] [           main] com.app.webdemo.WebdemoControllerTest    : Starting WebdemoControllerTest using Java 21.0.9 with PID 30204 (started by ASUS in D:\2.CPE\2-2\2.SoftWare\After\Lab66666\Lab6-8\Lab6\webdemo)
-2026-02-12T00:15:48.340+07:00  INFO 30204 --- [webdemo] [           main] com.app.webdemo.WebdemoControllerTest    : No active profile set, falling back to 1 default profile: "default"
-2026-02-12T00:15:49.070+07:00  INFO 30204 --- [webdemo] [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2026-02-12T00:15:49.329+07:00  INFO 30204 --- [webdemo] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2026-02-12T00:15:49.329+07:00  INFO 30204 --- [webdemo] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2026-02-12T00:15:49.334+07:00  INFO 30204 --- [webdemo] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
-2026-02-12T00:15:49.360+07:00  INFO 30204 --- [webdemo] [           main] com.app.webdemo.WebdemoControllerTest    : Started WebdemoControllerTest in 1.401 seconds (process running for 2.226)
+2026-02-12T09:35:33.399+07:00  INFO 3860 --- [webdemo] [           main] com.app.webdemo.WebdemoControllerTest    : Starting WebdemoControllerTest using Java 21.0.9 with PID 3860 (started by ASUS in D:\2.CPE\2-2\2.SoftWare\After\Lab66666\Lab6-8\Lab6\webdemo)
+2026-02-12T09:35:33.401+07:00  INFO 3860 --- [webdemo] [           main] com.app.webdemo.WebdemoControllerTest    : No active profile set, falling back to 1 default profile: "default"
+2026-02-12T09:35:34.051+07:00  INFO 3860 --- [webdemo] [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-02-12T09:35:34.305+07:00  INFO 3860 --- [webdemo] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-02-12T09:35:34.305+07:00  INFO 3860 --- [webdemo] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-02-12T09:35:34.305+07:00  INFO 3860 --- [webdemo] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2026-02-12T09:35:34.344+07:00  INFO 3860 --- [webdemo] [           main] com.app.webdemo.WebdemoControllerTest    : Started WebdemoControllerTest in 1.262 seconds (process running for 1.964)
 ]]></system-out>
     <system-err><![CDATA[Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build what is described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org/mockito/Mockito.html#0.3
 WARNING: A Java agent has been loaded dynamically (C:\Users\ASUS\.m2\repository\net\bytebuddy\byte-buddy-agent\1.15.11\byte-buddy-agent-1.15.11.jar)
@@ -96,9 +96,9 @@ WARNING: If a serviceability tool is not in use, please run with -Djdk.instrumen
 WARNING: Dynamic loading of agents will be disallowed by default in a future release
 ]]></system-err>
   </testcase>
-  <testcase name="testShowRegistrationForm" classname="com.app.webdemo.WebdemoControllerTest" time="0.244"/>
-  <testcase name="testHandleRegistrationSuccess" classname="com.app.webdemo.WebdemoControllerTest" time="0.08"/>
-  <testcase name="testHandleRegistrationError" classname="com.app.webdemo.WebdemoControllerTest" time="0.016"/>
-  <testcase name="testHomePage" classname="com.app.webdemo.WebdemoControllerTest" time="0.015"/>
+  <testcase name="testShowRegistrationForm" classname="com.app.webdemo.WebdemoControllerTest" time="0.221"/>
+  <testcase name="testHandleRegistrationSuccess" classname="com.app.webdemo.WebdemoControllerTest" time="0.052"/>
+  <testcase name="testHandleRegistrationError" classname="com.app.webdemo.WebdemoControllerTest" time="0.0"/>
+  <testcase name="testHomePage" classname="com.app.webdemo.WebdemoControllerTest" time="0.022"/>
   <testcase name="testDeleteUser" classname="com.app.webdemo.WebdemoControllerTest" time="0.0"/>
 </testsuite>
