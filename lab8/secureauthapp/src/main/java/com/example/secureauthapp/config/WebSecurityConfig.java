@@ -31,7 +31,7 @@ public class WebSecurityConfig {
             )
             .formLogin(form -> form
                 .loginPage("/login") // Custom login page
-                .defaultSuccessUrl("/greet", true) // Redirect to /greet after successful login
+                .defaultSuccessUrl("/home", true) // Redirect to /greet after successful login
                 .permitAll()
             )
             .logout(logout -> logout
