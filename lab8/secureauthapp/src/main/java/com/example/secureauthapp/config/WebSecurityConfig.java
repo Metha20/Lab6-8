@@ -26,7 +26,7 @@ public class WebSecurityConfig {
         http
             .authorizeHttpRequests(authorize -> authorize
                 .requestMatchers("/register", "/login").permitAll() // Allow access to registration and login pages
-                .requestMatchers("/greet").authenticated() // Secure the /greet endpoint
+                .requestMatchers("/home").authenticated() // Secure the /greet endpoint
                 .anyRequest().permitAll() // Allow access to all other endpoints
             )
             .formLogin(form -> form
