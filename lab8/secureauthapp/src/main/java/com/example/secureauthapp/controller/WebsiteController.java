@@ -1,8 +1,10 @@
 package com.example.secureauthapp.controller;
 
+import org.springframework.security.authentication.AnonymousAuthenticationToken;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
+import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -24,52 +26,71 @@ public class WebsiteController {
         this.authenticationManager = authenticationManager;
     }
 
-    // ===== HOME =====
+    // ================= HOME =================
     @GetMapping("/home")
-    public String home(Model model) {
+    public String homepage(Model model) {
+
         Authentication authentication =
                 SecurityContextHolder.getContext().getAuthentication();
-        model.addAttribute("username", authentication.getName());
-        return "home";
+
+        // ถ้ายังไม่ login
+        if (authentication == null
+                || !authentication.isAuthenticated()
+                || authentication instanceof AnonymousAuthenticationToken) {
+            return "redirect:/login";
+        }
+
+        // ส่ง username ไปหน้า HTML
+        String username = authentication.getName();
+        model.addAttribute("username", username);
+
+        // ดึง role
+        String role = authentication.getAuthorities().stream()
+                .map(GrantedAuthority::getAuthority)
+                .findFirst()
+                .orElse("ROLE_STAFF");
+
+        // แยกหน้า admin / viewer
+        if (role.equals("ROLE_ADMIN")) {
+            return "admin";
+        } else {
+            return "viewer";
+        }
     }
 
-    // ===== LOGIN =====
+    // ================= LOGIN =================
     @GetMapping("/login")
     public String login() {
         return "login";
     }
 
-    // ===== REGISTER =====
+    // ================= REGISTER =================
     @GetMapping("/register")
     public String register() {
         return "register";
     }
 
+    // ================= REGISTER POST =================
     @PostMapping("/register")
     public String registerUser(
             @RequestParam String username,
-            @RequestParam String password) {
+            @RequestParam String password,
+            @RequestParam String role) {
 
         try {
-            userDetailsService.registerUser(username, password);
+            userDetailsService.registerUser(username, password, role);
         } catch (Exception e) {
             return "redirect:/register?error";
         }
 
+        // Login อัตโนมัติหลังสมัคร
         Authentication authentication = authenticationManager.authenticate(
                 new UsernamePasswordAuthenticationToken(username, password)
         );
 
         SecurityContextHolder.getContext().setAuthentication(authentication);
-        return "redirect:/login?success";
-    }
 
-    // ===== GREET =====
-    @GetMapping("/greet")
-    public String greet(Model model) {
-        Authentication authentication =
-                SecurityContextHolder.getContext().getAuthentication();
-        model.addAttribute("username", authentication.getName());
-        return "greet";
+        // ไปหน้า home เพื่อเช็ค role
+        return "redirect:/home";
     }
 }
